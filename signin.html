@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <meta charset="utf-8">
+    <title>SignIn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="welcome_nosingin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <img class="image" src="images/logo_oldmoney.png" alt="thesis old money logo">
+       
+        <ul>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="signin.html">Sign in</a></li>
+        </ul>
+    </nav>
+
+    <div class="seethroughbox">
+        <h2 class="form-title">Sign In with University Account</h2>
+
+       
+        <form action="login.php" method="post">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="username">Username</label>
+                    <input type="text"
+                        id="log_username"
+                        name="log_username"
+                        placeholder="Enter Username"/>
+                </div>
+                <div class="user-input-box">
+                    <label for="password">Password</label>
+                    <input type="password"
+                        id="log_password"
+                        name="log_password"
+                        placeholder="Enter Password"/>
+                </div>
+
+
+                <div class="form-submit-btn">
+                    <input type="submit" value="Sign in">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    

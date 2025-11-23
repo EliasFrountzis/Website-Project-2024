@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <meta charset="utf-8">
+    <title>Thesis Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="welcome_nosingin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <script src="student_thesismanage.js"></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <img class="image" src="images/logo_oldmoney.png" alt="thesis old money logo">
+        <ul>
+            <li><a href="student_thesisshow.php">Thesis</a></li>
+            <li><a href="student_profile.php">Profile</a></li>
+            <li><a href="student_thesismanage.html">Thesis management</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="logout.php">LOGOUT</a></li>
+        </ul>
+    </nav>
+
+    <div class="seethroughbox">
+        <div id="generalInfo" class="show_subjects-box">
+            <h3>Thesis Information</h3>
+            <p id="thesisName"></p>
+            <p id="thesisId"></p>
+            <p id="thesisStatus"></p>
+            <p id="supervisingProfessor"></p>
+            <button id="showSearchBarBtn" style="display: none;">Search for a Professor</button>
+        </div>
+        
+        <div id="searchSection" style="display: none;" class="show_subjects-box">
+            <h2>Search for Your Desired Professor</h2>
+            <form id="professorSearchForm">
+                <input type="text" id="searchprofessor" name="searchprofessor" placeholder="Search Professor">
+                <button type="submit">Search</button>
+            </form>
+            <div id="professorResults"></div>
+        </div>
+
+        <div id="reviewSection" style="display: none;" class="show_subjects-box">
+            <h2>Upload Thesis File and Supporting Materials</h2>
+            <form id="thesisUploadForm">
+                <input type="file" id="thesisFile" name="thesisFile">
+                <button type="submit">Upload</button>
+            </form>
+            <form id="supportingMaterialsForm">
+                <input type="text" id="supportingMaterialUrl" name="supportingMaterialUrl" placeholder="Add URL">
+                <button type="button" id="addUrlButton">Add URL</button>
+            </form>
+            <div id="uploadedFiles"></div>
+            <div id="addedUrls"></div>
+
+            <h2>Examination Details</h2>
+            <form id="examinationForm">
+                <input type="datetime-local" id="examinationDateTime" name="examinationDateTime" required>
+                <label>
+                    <input type="radio" name="examinationMode" value="live" required> Live Attendance
+                </label>
+                <label>
+                    <input type="radio" name="examinationMode" value="online" required> Online
+                </label>
+                <input type="text" id="examinationVenue" name="examinationVenue" placeholder="Venue/URL" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="finishedSection" style="display: none;" class="show_subjects-box">
+            <h2>Thesis Information</h2>
+            <p id="supervisingProfessorInfo"></p>
+            <p id="thesisTitle"></p>
+            <p id="dateOfCompletion"></p>
+            <p id="presentationNotice"></p>
+            <p id="thesisGrade"></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,687 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: none;
+    font-family: Cinzel;
+}
+
+.seethroughbox {
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 auto; /* αλλαγη για να εχει το ιδιο κενο απο το πλαι  */
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px rgb(250, 235, 215);
+    overflow: auto;/* για να μην βγαινει εξω το περιεχομενι */
+
+}
+
+.seethroughbox1 {
+/* ΚΑΙΝΟΥΡΓΙΟ */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    /* Increase the height */
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* Increase the width */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px antiquewhite;
+
+    /* Ensure content stays within the box */
+}
+
+.seethroughbox2 {
+  /* ΚΑΙΝΟΥΡΓΙΟ */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    /* Increase the height */
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* Increase the width */
+    background: rgba(250, 235, 215, 0.452);
+    padding: 28px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px antiquewhite;
+    overflow: auto;
+    /* Ensure content stays within the box */
+}
+
+
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: rgb(112, 48, 149);
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px rgb(112, 48, 149);
+
+}
+
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label {
+    width: 95%;
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid rgb(112, 48, 149);
+    padding: 0 10px;
+    background-color: antiquewhite;
+}
+
+.form-submit-btn input {
+    cursor: pointer;
+}
+
+
+.form-submit-btn {
+    margin-top: 40px;
+}
+
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    background: rgb(112, 48, 149);
+}
+
+.form-submit-btn input:hover {
+    background: rgb(165, 69, 220);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.textareathesis {
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 2px solid rgb(112, 48, 149);
+    outline: none;
+    font-family: Cinzel;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    display: flex;
+    width: 60vh;
+    height: 50vh;
+    transition: all 0.2s;
+
+}
+
+
+.textareathesis:hover {
+    cursor: pointer;
+    background-color: rgb(252, 245, 232);
+}
+
+.textareathesis:focus {
+    cursor: text;
+
+}
+
+
+
+
+
+h1 {
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: wavy;
+
+}
+
+h2{
+    color: rgb(112, 48, 149);
+  
+    text-align: center;
+    
+    
+}
+
+
+
+ h6 {/* ΚΑΙΝΟΥΡΓΙΟ */
+
+    color: antiquewhite;
+    margin-top: 100px;
+    text-decoration: wavy;
+    text-align: left;
+    font-size: 30px;
+}
+
+h4 {/* ΚΑΙΝΟΥΡΓΙΟ */
+    color: rgb(175, 158, 185);
+    text-align: center;
+    /*margin-top: 100px;*/
+    text-decoration: wavy;
+    font-size: 30px;
+}
+
+
+h5 {
+    color: rgb(112, 48, 149);
+    text-align: center;
+    margin-top: 100px; /* ALLAGH giati htan mikro */
+    text-decoration: wavy; 
+}
+
+
+a {/* ΚΑΙΝΟΥΡΓΙΟ */
+    color: rgb(112, 48, 149);
+}
+
+.previous-notes {/* ΚΑΙΝΟΥΡΓΙΟ */
+    color: rgb(112, 48, 149);
+}
+
+body {
+    font-family: Cinzel;
+
+    background-image: url(images/oldbookclose.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .image {
+        float: left;
+        height: 180px;
+    }
+
+}
+.bold-text { 
+    font-weight: bold;
+ }
+
+
+nav {
+    background: rgb(0, 0, 0);
+    height: 180px;
+    width: 105%;
+    display: flex;/* AΛΛΑΓΕΣ τα παρακατω προστεθηκαν για να προσαρμοζεται αναλογα με το μεγεθοσ του περιεχομενου */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li {
+    font-size: 15px; /* ΑΛΛΑΓΗ το μικρυνα λιγο για να χωραει το λοgout σε κπ που φαινοταν μισο*/
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(112, 48, 149);
+    text-transform: uppercase;
+}
+
+
+a:hover,
+a:active {
+    background: none;/* αλλαγη εβγαλα το φοντο γτ ηταν μαυρο και μου φαινοταν πολυ σκουρο */
+    color: rgb(112, 48, 149);
+   
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: rgb(112, 48, 149);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check {
+    display: none;
+
+}
+
+@media(max-width: 952px) {
+    .image {
+        float: right;
+        height: 160px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 0, 0);
+        top: 160px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a:active {
+        background: none;
+        color: rgb(112, 48, 149);
+    }
+
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+}
+
+@media(max-width: 858px) {
+    .image {
+        float: right;
+        height: 160px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 0, 0);
+        top: 160px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a {/* ΚΑΙΝΟΥΡΓΙΟ */
+        color: rgb(112, 48, 149);
+    }
+
+    a:hover,
+    a:active {
+        background: none;
+        color: rgb(112, 48, 149);
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+}
+
+.flex-container {
+    width: auto;
+    height: auto;
+    margin: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-box {
+    font-size: 25px;
+    text-align: center;
+    border-radius: 20px;
+    width: 300px; /* αλλαγη μικρυνε */
+    /* Increased width */
+    height: auto; /* ΚΑΙΝΟΥΡΓΙΟ */
+    /* Adjust height to fit content */
+    justify-content: space-around;
+    margin-bottom: 30px;
+    background-color: antiquewhite;
+    font-family: Cinzel;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid rgb(112, 48, 149);
+    padding: 10px; /* ΚΑΙΝΟΥΡΓΙΟ */
+    /* Added padding */
+    box-sizing: border-box;/* ΚΑΙΝΟΥΡΓΙΟ */
+    /* Include padding in width and height */
+}
+
+.flex-box-text {
+    font-family: Cinzel;
+    font-size: 12px;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    text-decoration-color: rgb(112, 48, 149);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around; /* PRIN center! */
+    font-size: 15px;
+    align-items: center;
+}
+
+.show_subjects-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background: rgba(34, 18, 45, 0.5);
+    padding: 28px;
+    margin-bottom: 20px;
+    margin: 0 28px;
+    border-radius: 10px;
+
+    box-shadow: inset -2px 2px 2px antiquewhite;
+    font-size: 15px;
+}
+
+
+
+.show_subjects-box h3 {
+    text-shadow: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+.create_subjects-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background: rgba(34, 18, 45, 0.5);
+    padding: 28px;
+    margin-bottom: 20px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px antiquewhite;
+    font-size: 15px;
+
+}
+
+.imagescroll {
+    width: auto;
+    height: 90%;
+}
+
+.create_subjects-box:hover {
+    background: rgb(165, 69, 220);
+
+}
+
+
+
+.check {
+    height: 40px
+}
+
+.flexboxtext {
+    font-size: 10px;
+}
+
+
+/* Base styles for the table */
+/* General table styles */
+#dataTable {/* KAINOYRGIA */
+    width: 100%;
+    border-collapse: collapse;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#dataTable th,
+#dataTable td {/* KAINOYRGIA */
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#dataTable th {/* KAINOYRGIA */
+    background-color: antiquewhite;
+}
+
+/* Responsive styles */  /* KAINOYRGIA OLA TA KATO GIA PROSARMOGH PINAKVN GIA MIKRES OTHONES */
+@media screen and (max-width: 768px) {
+    .seethroughbox1 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 28px;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: inset -2px 2px 2px rgb(250, 235, 215);
+        overflow: auto;
+    }
+/* ΑΛΛΑΓΗ 10/01  */
+  nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a:active {
+        background: none;
+        color: rgb(112, 48, 149);
+    }
+
+
+    nav ul li a:hover {
+        background-color: #ddd;
+    }
+
+    #dataTable, #dataTable thead, #dataTable tbody, #dataTable th, #dataTable td, #dataTable tr {
+        display: block;
+    }
+
+    #dataTable tr {
+        margin-bottom: 10px;
+    }
+
+    #dataTable td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    #dataTable td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+
+    #dataTable th {
+        display: none;
+    }
+}
+
+
+
+.secrbutton {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(112, 48, 149); 
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.secrbutton:hover {
+    background-color: rgb(165, 69, 220); 
+}
+
+
+#finishButton {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(112, 48, 149); 
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+
+#finishButton:hover {
+    background-color: rgb(165, 69, 220); 
+}
+
+
+#cancelThesisBtn{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(112, 48, 149); 
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+#cancelThesisBtn:hover{
+    background-color: rgb(165, 69, 220); 
+}
+
+
+#insertNumberBtn{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(112, 48, 149); 
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+#insertNumberBtn:hover{
+    background-color: rgb(165, 69, 220); 
+}
