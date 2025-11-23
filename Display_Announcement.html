@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Announcement</title>
+    <link rel="stylesheet" href="welcome_nosingin.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <img class="image" src="images/logo_oldmoney.png" alt="thesis old money logo">
+       
+        <ul>
+            <li><a href="signin.html">Sign in</a></li>
+        </ul>
+    </nav>
+
+    <div class="seethroughbox">    
+        <div id="grades-content">
+            <h2 class="form-title">Announcement</h2>
+            <br>
+            <div class="textareathesis">   
+                <div id="announcement-text"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the text from the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const text = urlParams.get('text');
+
+        if (text) {
+            document.getElementById('announcement-text').innerText = decodeURIComponent(text);
+        } else {
+            document.getElementById('announcement-text').innerText = 'No announcement text provided.';
+        }
+    </script>
+</body>
+</html>

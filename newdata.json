@@ -1,0 +1,35 @@
+{
+    "code": 1,
+    "message": "Retrieved successfully",
+    "students": [
+        {
+                "id": "124",
+                "name": "Vasia",
+                "surname": "Bagena",
+                "student_number": "10890000",
+                "street": "Ionias",
+                "number": "89",
+                "city": "Athens",
+                "postcode": "17124",
+                "father_name": "George",
+                "landline_telephone": "2109356782",
+                "mobile_telephone": "6939755555",
+                "email": "10890000@students.upatras.gr"
+            }
+    ],
+    "professors": [
+       
+        {
+            "id": "78",
+            "name": "Jim",
+            "surname": "Houan",
+            "email": "jimhouan@ceid.upatras.gr",
+            "topic": "Network-centric systems",
+            "landline": "2610956789",
+            "mobile": "6974456743",
+            "department": "CEID",
+            "university": "University of Patras"
+        }
+    ]
+
+}
